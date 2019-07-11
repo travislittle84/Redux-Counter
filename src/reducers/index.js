@@ -13,19 +13,16 @@ export default (state = initialState, action) => {
   console.log("reducer called", action.type)
   switch (action.type) {
     case INCREMENT:
-      console.log('increment reducer', action.type)
       return {
         ...state,
         count: state.count +=1
       }
     case DECREMENT:
-      console.log('decrement reducer', action.type)
       return {
         ...state,
         count: state.count -=1
       }
     default:
-      console.log("wut", action.type)
       return state;
   }
 };

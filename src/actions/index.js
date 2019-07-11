@@ -10,7 +10,6 @@ export const DECREMENT = 'DECREMENT';
 // is left to the reducer(s).
 
 export const increment = () => {
-  console.log("increment in actions")
   return {
     type: INCREMENT,
     
@@ -18,7 +17,6 @@ export const increment = () => {
 };
 
 export const decrement = () => {
-  console.log("decrement in actions")
   return {
     type: DECREMENT,
     
